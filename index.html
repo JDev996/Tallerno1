@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Primer Taller BIT HTML y CSS</title>
+</head>
+<body>
+    <!--Encabezado de La Pag Web-->
+    <header>
+        <h1>Empresa de desarrollo de Software NetWorld Colombia S.A.</h1>
+        <p><strong>A continuacaión encontrará el formulario en el que se registrará como desarrollador</strong></p>
+    </header>
+        <main>
+            <section id="registro">
+                <form action="#" method="post">
+
+                    <!--  Datos personales  -->
+                    <fieldset>
+                        <legend>Datos Personales del trabajador</legend>
+
+                        <p>
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ej. Juan Pérez">
+                        </p>
+
+                        <p>
+                            <label for="cedula">Cédula</label>
+                            <input type="number" name="cedula" id="cedula" placeholder="Ej. 123456">
+                        </p>
+
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Ej. pepitoperez@correo.com">
+                        </p>
+
+                        <p>
+                            <label for="telefono">Numero de Celular o telefono</label>
+                            <input type="tel" name="telefono" id="telefono" >
+                        </p>
+                    </fieldset>
+                    
+                    <!--  Rol y cargo  -->
+                    <fieldset>
+                        <legend>Información Laboral</legend>
+                        <p> 
+                            <label for="opciones">Elige tu rol asignado:</label>
+                            <select name="opciones" id="opciones">
+                                <option value="Front">Desarrollador Front</option>
+                                <option value="Back">Desarrollador Back</option>
+                                <option value="DataBase">Admin Bases de Datos</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="salario">Salario mensual</label>
+                            <input type="number" name="salario" id="salario" placeholder="Ej. 3000000" required>
+                        </p>
+
+                        <div>
+                            <p>Jornada laboral:</p>
+                            <input type="radio" name="jornada" id="jornada-completa" value="completa" checked>
+                            <label for="jornada-completa">Tiempo completo</label>
+                            
+                            <input type="radio" name="jornada" id="jornada-media" value="media">
+                            <label for="jornada-media">Medio tiempo</label>
+                            
+                            <input type="radio" name="jornada" id="jornada-remoto" value="remoto">
+                            <label for="jornada-remoto">Remoto flexible</label>
+                        </div>
+                    </fieldset>
+                    
+                    <!--  Acciones  -->
+                    <fieldset>
+                        <button type="submit">Registrar Empleado</button>
+                        <button type="reset">Limpiar Formulario</button>
+                    </fieldset>
+
+                </form>
+            </section>
+
+            <section id="lista-empleados">
+                <h2>Empleados Registrados</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cédula</th>
+                            <th>Rol</th>
+                            <th>Jornada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>123456</td>
+                            <td>Front-End</td>
+                            <td>Tiempo completo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    
+    <footer>
+      <p>© 2026 NetWorld Colombia S.A. Todos los derechos reservados.</p>
+        <p>
+            Para mas información:
+            <a href="https://github.com/JDev996" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/juan-felipe-hincapié-4364bb232/" target="_blank">LinkedIn</a> |
+            <a href="mailto:jh.bimcs.it@gmail.com">Escríbeme por Correo</a>
+        </p>  
+    </footer>
+</body>
+</html>
